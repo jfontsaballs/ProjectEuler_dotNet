@@ -61,14 +61,13 @@ namespace ComparativaC
                 var isComposite = new bool[maxValue + 1];
                 for (int i = 2; i <= maxValue; i++)
                 {
-                    if (isComposite[i])
-                        continue;
-                    else
+                    if (!isComposite[i])
+                    {
                         yield return i;
-                    for (int j = 2 * i; j <= maxValue; j += i)
-                        isComposite[j] = true;
+                        for (int j = 2 * i; j <= maxValue; j += i)
+                            isComposite[j] = true;
+                    }
                 }
-
             }
             Debug.Assert(new[] { 2, 3, 5, 7, 11, 13, 17 }.SequenceEqual(Primes2(17)));
             Print(() => Primes2(108801).Max(), 108799, 10);
