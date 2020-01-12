@@ -71,4 +71,5 @@ let EulerProblem3() =
     let valRoot = int64 (Math.Sqrt(float VALUE)) + 10L
     PrimesBig valRoot |> Seq.rev |> Seq.pick (fun p -> if VALUE % p = 0L then Some(p) else None)
 
-Console.ReadLine() |> ignore
+let main() =
+    Console.ReadLine() |> ignore
