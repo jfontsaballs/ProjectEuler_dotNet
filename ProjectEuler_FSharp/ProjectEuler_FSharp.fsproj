@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Fibonacci.fs" />
     <Compile Include="EulerProblem1.fs" />
+    <Compile Include="EulerProblem2.fs" />
   </ItemGroup>
 
   <ItemGroup>
