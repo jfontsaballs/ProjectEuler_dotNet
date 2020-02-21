@@ -16,10 +16,12 @@
 
     <ItemGroup>
         <Compile Include="Fibonacci.fs" />
+        <Compile Include="Palindromes.fs" />
         <Compile Include="Primes.fs" />
         <Compile Include="EulerProblem1.fs" />
         <Compile Include="EulerProblem2.fs" />
         <Compile Include="EulerProblem3.fs" />
+        <Compile Include="EulerProblem4.fs" />
     </ItemGroup>
 
     <ItemGroup>
